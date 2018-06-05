@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: app1
+    version: v1
+  cloud:
+    consul:
+      enabled: true
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+        profileSeparator: '-'
+      discovery:
+        enabled: true
+        tags: '@pom.artifactId@'
+#    vault: 
+#      scheme: http
+#      host: localhost
+#      port: 8200
+#      authentication: TOKEN
+      # token app
+#      token: 31001c1b-5ab6-839f-ed33-9873babc13d5
